@@ -29,7 +29,7 @@ public class Appconfig {
         return new MemberServiceImpl(memberRepository());
     }
 
-    @Bean
+//    @Bean
     public MemberRepository memberRepository() {
         System.out.println("call Appconfig.memberRepository");
         return new MemoryMemberRepository();
@@ -41,7 +41,7 @@ public class Appconfig {
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 
-    @Bean
+//    @Bean
     public DiscountPolicy discountPolicy() {
         // return new FixDiscountPolicy();
         return new RateDiscountPolicy();
