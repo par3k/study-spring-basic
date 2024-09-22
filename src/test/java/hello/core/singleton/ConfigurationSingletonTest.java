@@ -13,7 +13,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ConfigurationSingletonTest {
 
     @Test
-    @DisplayName("모두 같은 객체이다.")
     void configurationTest() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(Appconfig.class);
 
